@@ -124,7 +124,7 @@ export default function AdminPhotosPage() {
         <div className="rounded-xl border border-dashed border-border bg-muted/20 p-4">
           <label
             htmlFor="file-upload"
-            className="flex cursor-pointer items-center justify-center gap-2 rounded-xl border border-border bg-white px-4 py-3 text-sm font-medium text-foreground hover:bg-muted/30"
+            className="glass-subtle flex cursor-pointer items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-medium text-foreground hover:bg-[#fff8ee]"
           >
             <UploadCloud className="h-4 w-4" />
             Mock upload local file
@@ -145,7 +145,7 @@ export default function AdminPhotosPage() {
         ) : (
           <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
             {restaurant.galleryImages.map((photo) => (
-              <div key={photo} className="overflow-hidden rounded-xl border border-border bg-white">
+              <div key={photo} className="glass-subtle overflow-hidden rounded-xl">
                 <div className="relative h-44">
                   <Image src={photo} alt="Restaurant gallery photo" fill className="object-cover" sizes="33vw" />
                 </div>

@@ -46,8 +46,8 @@ export default function HomePage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-      <section className="rounded-3xl border border-border bg-white p-6 shadow-soft sm:p-10">
-        <p className="mb-4 inline-flex rounded-full border border-border bg-muted px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground">
+      <section className="glass-surface rounded-3xl p-6 sm:p-10">
+        <p className="glass-subtle mb-4 inline-flex rounded-full px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground">
           Premium dining, simplified
         </p>
         <h1 className="max-w-2xl font-display text-4xl font-semibold leading-tight text-foreground sm:text-5xl">
@@ -59,14 +59,14 @@ export default function HomePage() {
         <div className="mt-6 flex flex-col gap-3 sm:flex-row">
           <Link
             href="/restaurants"
-            className="inline-flex h-12 items-center justify-center rounded-xl bg-accent px-5 text-base font-medium text-accent-foreground shadow-soft transition hover:bg-accent/90 sm:w-auto"
+            className="inline-flex h-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#f7a24c] to-[#f97b43] px-5 text-base font-medium text-accent-foreground shadow-[0_14px_24px_rgba(249,123,67,0.32)] transition hover:brightness-105 sm:w-auto"
           >
             <Search className="mr-2 h-4 w-4" />
             Explore Restaurants
           </Link>
           <Link
             href="/admin"
-            className="inline-flex h-12 items-center justify-center rounded-xl border border-border bg-white px-5 text-base font-medium text-foreground transition hover:bg-muted/30 sm:w-auto"
+            className="glass-subtle inline-flex h-12 items-center justify-center rounded-xl px-5 text-base font-medium text-foreground transition hover:bg-[#fff8ee] sm:w-auto"
           >
             Restaurant Admin
             <ArrowRight className="ml-2 h-4 w-4" />

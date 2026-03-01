@@ -26,7 +26,7 @@ export function Tabs({ items, defaultTab, className }: TabsProps) {
 
   return (
     <div className={className}>
-      <div className="flex gap-2 overflow-x-auto rounded-xl border border-border bg-white p-1">
+      <div className="glass-subtle flex gap-2 overflow-x-auto rounded-xl p-1">
         {items.map((item) => {
           const active = item.id === activeTab;
           return (
@@ -36,7 +36,9 @@ export function Tabs({ items, defaultTab, className }: TabsProps) {
               onClick={() => setActiveTab(item.id)}
               className={cn(
                 "rounded-lg px-3 py-2 text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-accent/25",
-                active ? "bg-accent text-accent-foreground" : "text-muted-foreground hover:text-foreground"
+                active
+                  ? "bg-gradient-to-br from-[#f7a24c] to-[#f97b43] text-accent-foreground"
+                  : "text-muted-foreground hover:bg-[#fff2e1] hover:text-foreground"
               )}
             >
               {item.label}

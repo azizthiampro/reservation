@@ -18,8 +18,8 @@ const config: Config = {
         danger: "hsl(var(--danger))"
       },
       fontFamily: {
-        sans: ["var(--font-manrope)"],
-        display: ["var(--font-fraunces)"]
+        sans: ["var(--font-montserrat)"],
+        display: ["var(--font-montserrat)"]
       },
       boxShadow: {
         soft: "0 8px 30px rgba(15, 23, 42, 0.08)",

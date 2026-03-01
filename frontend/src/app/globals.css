@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --background: 40 40% 98%;
-  --foreground: 222 28% 14%;
-  --muted: 35 30% 95%;
-  --muted-foreground: 220 14% 42%;
-  --border: 215 21% 88%;
+  --background: 37 56% 95%;
+  --foreground: 18 28% 14%;
+  --muted: 35 42% 90%;
+  --muted-foreground: 24 16% 38%;
+  --border: 32 32% 82%;
   --card: 0 0% 100%;
-  --accent: 206 70% 18%;
+  --accent: 23 88% 54%;
   --accent-foreground: 0 0% 100%;
-  --success: 145 72% 30%;
-  --warning: 41 88% 50%;
+  --success: 142 64% 32%;
+  --warning: 39 92% 48%;
   --danger: 0 72% 52%;
 }
 
@@ -27,16 +27,39 @@ body {
 
 body {
   background:
-    radial-gradient(circle at 2% 0%, rgba(18, 47, 80, 0.06), transparent 35%),
-    radial-gradient(circle at 98% 0%, rgba(142, 88, 44, 0.08), transparent 35%),
+    radial-gradient(circle at 8% 8%, rgba(255, 198, 134, 0.26), transparent 30%),
+    radial-gradient(circle at 94% 14%, rgba(255, 224, 172, 0.24), transparent 34%),
+    radial-gradient(circle at 86% 82%, rgba(255, 162, 112, 0.2), transparent 40%),
+    linear-gradient(165deg, rgba(255, 255, 255, 0.6), rgba(255, 246, 232, 0.78)),
     hsl(var(--background));
   color: hsl(var(--foreground));
-  font-family: var(--font-manrope), sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
+  background-attachment: fixed;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.glass-surface {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(255, 248, 238, 0.95));
+  border: 1px solid rgba(255, 227, 193, 0.9);
+  box-shadow:
+    0 14px 30px rgba(79, 46, 20, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.glass-subtle {
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.9), rgba(255, 247, 235, 0.9));
+  border: 1px solid rgba(255, 229, 199, 0.88);
+  box-shadow:
+    0 8px 18px rgba(79, 46, 20, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.glass-stroke {
+  border: 1px solid rgba(255, 225, 190, 0.9);
 }
 
 @keyframes fadeIn {

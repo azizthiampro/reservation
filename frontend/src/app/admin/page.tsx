@@ -150,28 +150,28 @@ export default function AdminOverviewPage() {
           <h2 className="font-display text-2xl font-semibold">Quick links</h2>
           <Link
             href="/admin/menu"
-            className="flex items-center gap-2 rounded-xl border border-border bg-white px-3 py-2 text-sm font-medium hover:bg-muted/30"
+            className="glass-subtle flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-medium hover:bg-[#fff8ee]"
           >
             <MenuSquare className="h-4 w-4" />
             Manage menu
           </Link>
           <Link
             href="/admin/photos"
-            className="flex items-center gap-2 rounded-xl border border-border bg-white px-3 py-2 text-sm font-medium hover:bg-muted/30"
+            className="glass-subtle flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-medium hover:bg-[#fff8ee]"
           >
             <ImageIcon className="h-4 w-4" />
             Update gallery
           </Link>
           <Link
             href="/admin/reservations"
-            className="flex items-center gap-2 rounded-xl border border-border bg-white px-3 py-2 text-sm font-medium hover:bg-muted/30"
+            className="glass-subtle flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-medium hover:bg-[#fff8ee]"
           >
             <CalendarClock className="h-4 w-4" />
             Reservation inbox
           </Link>
           <Link
             href="/restaurants/r1"
-            className="flex items-center gap-2 rounded-xl border border-border bg-white px-3 py-2 text-sm font-medium hover:bg-muted/30"
+            className="glass-subtle flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-medium hover:bg-[#fff8ee]"
           >
             <Star className="h-4 w-4" />
             View public profile

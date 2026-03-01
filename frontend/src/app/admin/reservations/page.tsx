@@ -152,7 +152,7 @@ export default function AdminReservationsPage() {
                 key={reservation.id}
                 type="button"
                 onClick={() => setSelectedReservation(reservation)}
-                className="flex w-full flex-col gap-2 rounded-xl border border-border bg-white p-3 text-left transition hover:bg-muted/25 sm:flex-row sm:items-center sm:justify-between"
+                className="glass-subtle flex w-full flex-col gap-2 rounded-xl p-3 text-left transition hover:bg-[#fff8ee] sm:flex-row sm:items-center sm:justify-between"
               >
                 <div>
                   <p className="text-sm font-semibold text-foreground">{reservation.customerName}</p>
@@ -213,7 +213,7 @@ export default function AdminReservationsPage() {
             </div>
 
             {selectedReservation.notes ? (
-              <div className="rounded-xl border border-border bg-white p-3">
+              <div className="glass-subtle rounded-xl p-3">
                 <p className="text-sm font-medium text-foreground">Guest notes</p>
                 <p className="mt-1 text-sm text-muted-foreground">{selectedReservation.notes}</p>
               </div>

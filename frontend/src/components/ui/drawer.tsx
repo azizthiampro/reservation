@@ -43,13 +43,13 @@ export function Drawer({ open, onClose, title, children }: DrawerProps) {
     <div className="fixed inset-0 z-50" role="dialog" aria-modal="true">
       <button
         type="button"
-        className="absolute inset-0 bg-black/35"
+        className="absolute inset-0 bg-slate-900/35"
         onClick={onClose}
         aria-label="Close details panel"
       />
       <aside
         className={cn(
-          "absolute bottom-0 right-0 top-0 w-full max-w-md border-l border-border bg-white p-5 shadow-soft",
+          "glass-surface absolute bottom-0 right-0 top-0 w-full max-w-md border-l border-border p-5",
           "animate-[slideIn_.25s_ease-out]"
         )}
       >

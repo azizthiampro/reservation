@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { ReactNode } from "react";
-import { Fraunces, Manrope } from "next/font/google";
+import { Montserrat } from "next/font/google";
 
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
@@ -8,17 +8,10 @@ import { ToastProvider } from "@/components/ui/toast";
 
 import "./globals.css";
 
-const manrope = Manrope({
-  variable: "--font-manrope",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"]
-});
-
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  style: ["normal", "italic"]
 });
 
 export const metadata: Metadata = {
@@ -30,7 +23,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${manrope.variable} ${fraunces.variable} antialiased`}>
+      <body suppressHydrationWarning className={`${montserrat.variable} antialiased`}>
         <ToastProvider>
           <div className="min-h-screen">
             <SiteHeader />

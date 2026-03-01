@@ -303,7 +303,7 @@ export default function AdminMenuPage() {
         ) : (
           <div className="space-y-3">
             {categories.map((category, index) => (
-              <div key={category.id} className="rounded-xl border border-border bg-muted/25 p-3">
+              <div key={category.id} className="glass-subtle rounded-xl p-3">
                 <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
                   <div className="flex items-center gap-2">
                     <Button
@@ -379,7 +379,7 @@ export default function AdminMenuPage() {
             {selectedCategory.dishes.map((dish) => (
               <div
                 key={dish.id}
-                className="flex flex-col gap-3 rounded-xl border border-border bg-white p-3 lg:flex-row lg:items-center lg:justify-between"
+                className="glass-subtle flex flex-col gap-3 rounded-xl p-3 lg:flex-row lg:items-center lg:justify-between"
               >
                 <div>
                   <p className="text-sm font-semibold text-foreground">{dish.name}</p>
@@ -489,7 +489,7 @@ export default function AdminMenuPage() {
                   className={`rounded-full border px-3 py-1 text-xs font-medium transition ${
                     dishForm.tags.includes(tag)
                       ? "border-accent bg-accent text-accent-foreground"
-                      : "border-border bg-white text-muted-foreground"
+                      : "glass-subtle border-border text-muted-foreground"
                   }`}
                 >
                   {tag}

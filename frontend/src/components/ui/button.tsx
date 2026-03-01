@@ -13,13 +13,13 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
-    "bg-accent text-accent-foreground shadow-soft hover:bg-accent/90 focus-visible:ring-2 focus-visible:ring-accent/30",
+    "bg-gradient-to-br from-[#f7a24c] to-[#f97b43] text-accent-foreground shadow-[0_12px_24px_rgba(249,123,67,0.32)] hover:brightness-105 focus-visible:ring-2 focus-visible:ring-accent/30",
   secondary:
-    "bg-white text-foreground border border-border hover:bg-muted/40 focus-visible:ring-2 focus-visible:ring-accent/20",
+    "glass-subtle text-foreground hover:bg-[#fff8ee] focus-visible:ring-2 focus-visible:ring-accent/20",
   ghost:
-    "bg-transparent text-foreground hover:bg-muted/50 focus-visible:ring-2 focus-visible:ring-accent/20",
+    "bg-transparent text-foreground hover:bg-[#fff2e1] focus-visible:ring-2 focus-visible:ring-accent/20",
   danger:
-    "bg-danger text-white hover:bg-danger/90 focus-visible:ring-2 focus-visible:ring-danger/30"
+    "bg-danger text-white shadow-[0_8px_18px_rgba(220,38,38,0.25)] hover:bg-danger/90 focus-visible:ring-2 focus-visible:ring-danger/30"
 };
 
 const sizeStyles: Record<ButtonSize, string> = {

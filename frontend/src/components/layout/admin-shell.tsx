@@ -19,7 +19,7 @@ export function AdminShell({ children }: { children: ReactNode }) {
 
   return (
     <div className="mx-auto grid w-full max-w-7xl gap-6 px-4 py-6 sm:px-6 lg:grid-cols-[220px_1fr] lg:px-8">
-      <aside className="rounded-2xl border border-border bg-white p-3 shadow-sm lg:h-fit">
+      <aside className="glass-surface rounded-2xl p-3 lg:h-fit">
         <p className="mb-3 px-2 text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">
           Restaurant Admin
         </p>
@@ -33,8 +33,8 @@ export function AdminShell({ children }: { children: ReactNode }) {
                 className={cn(
                   "rounded-xl px-3 py-2 text-sm font-medium transition-colors",
                   active
-                    ? "bg-accent text-accent-foreground"
-                    : "text-muted-foreground hover:bg-muted/60 hover:text-foreground"
+                    ? "bg-gradient-to-br from-[#f7a24c] to-[#f97b43] text-accent-foreground"
+                    : "text-muted-foreground hover:bg-[#fff2e1] hover:text-foreground"
                 )}
               >
                 {item.label}

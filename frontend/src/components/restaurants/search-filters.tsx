@@ -40,7 +40,7 @@ export function SearchFilters({ cuisines, values, onChange }: SearchFiltersProps
   };
 
   return (
-    <section className="space-y-3 rounded-2xl border border-border bg-white p-4">
+    <section className="glass-surface space-y-3 rounded-2xl p-4">
       <Input
         id="search"
         label="Search"
@@ -81,7 +81,7 @@ export function SearchFilters({ cuisines, values, onChange }: SearchFiltersProps
           type="checkbox"
           checked={Boolean(values.openNow)}
           onChange={onOpenNowChange}
-          className="h-4 w-4 rounded border-border text-accent focus:ring-accent/20"
+          className="h-4 w-4 rounded border-border bg-white text-accent focus:ring-accent/20"
         />
         Open now only
       </label>

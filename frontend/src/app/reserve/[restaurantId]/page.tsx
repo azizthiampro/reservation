@@ -246,7 +246,7 @@ export default function ReservationPage() {
                   ? "border-accent bg-accent text-accent-foreground"
                   : item < step
                     ? "border-success/40 bg-success/10 text-success"
-                    : "border-border bg-white text-muted-foreground"
+                    : "glass-subtle border-border text-muted-foreground"
               }`}
             >
               Step {item}
@@ -375,7 +375,7 @@ export default function ReservationPage() {
               </Link>
               <Link
                 href="/restaurants"
-                className="inline-flex h-10 items-center justify-center rounded-xl border border-border bg-white px-4 text-sm font-medium text-foreground"
+                className="glass-subtle inline-flex h-10 items-center justify-center rounded-xl px-4 text-sm font-medium text-foreground"
               >
                 Explore more
               </Link>

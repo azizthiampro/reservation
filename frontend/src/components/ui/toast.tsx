@@ -72,7 +72,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
           <div
             key={toast.id}
             className={cn(
-              "pointer-events-auto rounded-xl border px-3 py-2 shadow-soft backdrop-blur",
+              "pointer-events-auto rounded-xl border px-3 py-2 shadow-soft",
               kindMap[toast.kind].className,
               "animate-[fadeIn_.2s_ease-out]"
             )}

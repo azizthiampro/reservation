@@ -173,7 +173,7 @@ export default function RestaurantDetailsPage() {
 
       <div className="grid gap-6 lg:grid-cols-[1fr_320px]">
         <section className="space-y-6">
-          <div className="space-y-3 rounded-2xl border border-border bg-white p-5">
+          <div className="glass-surface space-y-3 rounded-2xl p-5">
             <div className="flex flex-wrap items-start justify-between gap-2">
               <div>
                 <h1 className="font-display text-4xl font-semibold text-foreground">{restaurant.name}</h1>
@@ -226,7 +226,7 @@ export default function RestaurantDetailsPage() {
         </section>
 
         <aside className="hidden lg:block">
-          <div className="sticky top-24 rounded-2xl border border-border bg-white p-4 shadow-soft">
+          <div className="glass-surface sticky top-24 rounded-2xl p-4">
             <h3 className="font-display text-2xl font-semibold">Reserve a table</h3>
             <p className="mt-1 text-sm text-muted-foreground">Earliest availability: {restaurant.nextAvailableSlots[0]}</p>
             <Link
@@ -239,7 +239,7 @@ export default function RestaurantDetailsPage() {
         </aside>
       </div>
 
-      <div className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-white/95 p-3 backdrop-blur lg:hidden">
+      <div className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-[#fffaf2]/95 p-3 lg:hidden">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3">
           <div>
             <p className="text-xs text-muted-foreground">Next available</p>

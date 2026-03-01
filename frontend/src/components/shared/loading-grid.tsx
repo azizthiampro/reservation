@@ -4,7 +4,7 @@ export function LoadingGrid({ count = 6 }: { count?: number }) {
   return (
     <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
       {Array.from({ length: count }).map((_, index) => (
-        <div key={index} className="overflow-hidden rounded-2xl border border-border bg-white p-4">
+        <div key={index} className="glass-subtle overflow-hidden rounded-2xl p-4">
           <Skeleton className="h-40 w-full rounded-xl" />
           <div className="mt-4 space-y-2">
             <Skeleton className="h-4 w-2/3" />
